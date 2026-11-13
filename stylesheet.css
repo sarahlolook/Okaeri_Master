@@ -1,10 +1,8 @@
 body {
     background-image: url("../images/beige_bg.png");
     background-repeat: repeat;
-    background-position: center center;
+    background-size: 1000px;
     background-attachment: fixed;
-    background-size: 100%;
-
     padding: 5% clamp(1rem, 8vw, 10rem);
     font-size: 1rem;
     font-family: Candara;
@@ -26,7 +24,7 @@ div {
     float: left;
     width: 70%;
 }
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 62rem) {
     .side, .main, .navbar, .footer{   
       width: 100%;
       padding: 0;
@@ -36,7 +34,8 @@ div {
 
 .home_header, fieldset {
     overflow: hidden;
-    padding: 5%;
+    padding: 20px;
+    margin: 5%;
     min-height: 100px;
     background: rgb(255, 215, 222);
     border: 5px solid palevioletred;
@@ -51,16 +50,37 @@ div {
 .header_text{
     text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
     margin: 0;
-    font-size: clamp(3rem, 4vw, 5rem);
+    font-size: clamp(2rem, 3vw, 5rem);
 }
 
 /* images */
-.side img, main img {
+.side img, .main img {
     object-fit:cover;
     padding: 20px;
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+/* card */
+.card, .card_white_main, .card_white {
+    overflow: hidden;
+    border: 5px solid palevioletred;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 1rem;
+}
+.card {
+    background: rgb(255, 215, 222);
+}
+
+.card_white_main {
+    background-color: lavender;
+    margin: 1rem 1px 2rem;
+}
+
+.card_white {
+    background-color: aliceblue;
 }
 
 /* button */
@@ -70,8 +90,9 @@ button {
 
 .role-option {
     display: inline-block;
-    padding: 5px 18px;
+    padding: 3px 10px;
     background-color: lavenderblush;
+    border: 3px solid transparent;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -83,4 +104,16 @@ button {
     background-color: rgb(255, 151, 168);
     border: 3px solid palevioletred;
     color: white;
+}
+
+.feed_container {
+    width: 100%;
+    overflow-y: scroll;
+}
+  
+.feed_container img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
 }
