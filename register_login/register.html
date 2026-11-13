@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../stylesheet.css">
+		<!-- <link rel='stylesheet' type='text/css' media='screen' href='../assignment6/asg6.css'> -->
+		<script type="text/javascript" src="register.js"></script>
+	</head>
+	<body>
+		<h1 class="home_header_text"><a href="../index.html">Okaeri Master!</a></h1> <br>
+		<div class="main">
+			<form name="myRegister" id="myRegister" action="login.html">
+				<fieldset>
+					<h1 class="header_text">Register</h1> <br>
+					Username 
+					<input type="text" name="username" required>
+					<br>
+					Password 
+					<input type="password" name="password" required>
+					<br>
+					Confirm Password  
+					<input type="password" name="password" required>
+					<br>
+					Birthday 
+					<input type="date" name="bday" value="" required>
+					<br>
+					Role 
+					<div class="role-selection">
+						<label class="role-option">
+							<input type="radio" name="role" value="male">Master
+						</label>
+					
+						<label class="role-option">
+							<input type="radio" name="role" value="female">Maid
+						</label>
+					</div>
+					Email address 
+					<input type="email" name="email" >
+					<br>
+					<button type="submit" id="registerBtn">Register</button>
+					<button type="reset" id="resetBtn">Reset</button> <br>
+					<span><small>*role can be change later!</small></span>
+				</fieldset>
+			</form>
+		</div>
+		<div class="side">
+			<img src="../images/manager1.png" class=""
+                        alt="preview">
+		</div>
+
+		
+	</body>
+</html>

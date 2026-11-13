@@ -1,0 +1,86 @@
+body {
+    background-image: url("../images/beige_bg.png");
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+
+    padding: 5% clamp(1rem, 8vw, 10rem);
+    font-size: 1rem;
+    font-family: Candara;
+}
+div {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+/* so padding might be better to use px, fontsize stay rem */
+/* button's font-size/width should be set in rems */
+/* recommend using rems for media queries. from https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/ */
+* {
+    box-sizing: border-box;
+}
+.side {
+    float: left;
+    width: 30%;
+}
+.main {
+    float: left;
+    width: 70%;
+}
+@media screen and (max-width: 40rem) {
+    .side, .main, .navbar, .footer{   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+.home_header, fieldset {
+    overflow: hidden;
+    padding: 5%;
+    min-height: 100px;
+    background: rgb(255, 215, 222);
+    border: 5px solid palevioletred;
+    border-radius: 50px;
+}
+.home_header_text{
+    text-align: center;
+    text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+    margin: 0;
+    font-size: clamp(3rem, 5vw, 20rem);
+}
+.header_text{
+    text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+    margin: 0;
+    font-size: clamp(3rem, 4vw, 5rem);
+}
+
+/* images */
+.side img, main img {
+    object-fit:cover;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* button */
+button {
+    cursor: pointer;
+}
+
+.role-option {
+    display: inline-block;
+    padding: 5px 18px;
+    background-color: lavenderblush;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* Hide radio circle */
+.role-option input {
+    display: none;
+}
+.role-option:has(input:checked) {
+    background-color: rgb(255, 151, 168);
+    border: 3px solid palevioletred;
+    color: white;
+}
