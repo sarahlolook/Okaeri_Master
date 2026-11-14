@@ -50,6 +50,7 @@ div {
     margin: 0;
     font-size: clamp(2rem, 3vw, 5rem);
 }
+
 .header_text_cen{
     text-align: center;
     text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
@@ -126,13 +127,25 @@ a:hover {
     border-radius: 2rem;
     background-color: palegoldenrod;
 }
+.no_link_style {
+    color: black;
+    text-decoration: none;
+    text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+}
+
+.no_link_style:hover, .no_link_style:active {
+    color:brown;
+    background-color: transparent;
+    border: none;
+}
 
 /* navigation bar */
 .navbar, .phone_navbar_top, .phone_navbar_btm {
     left: 0;
     width: 100%;
     z-index: 9999;
-    padding: 10px 0;
+    padding: 15px 0;
+    font-size: clamp(1.2rem, 2.5vw, 4rem);
     background: black;
 }
 .navbar {
@@ -151,10 +164,10 @@ a:hover {
 }
 .navbar a:hover, .phone_navbar_top a:hover, .phone_navbar_btm a:hover {
     color: crimson;
-    border: none;
+    border: 3px solid transparent;
     border-radius: 30px;
 }
-.navbar a:active {
+.navbar a:active, .phone_navbar_top a:active, .phone_navbar_btm a:active {
     border: 3px solid white;
     background-color: tan;
 }
@@ -214,6 +227,9 @@ a:hover {
         position: fixed;
         top: 0;
         left: 0;
+    }
+    .phone_navbar_top a.right {
+        margin-left: auto;
     }
     .phone_navbar_btm {
         display: flex;
