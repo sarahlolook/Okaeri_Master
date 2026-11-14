@@ -128,29 +128,41 @@ a:hover {
 }
 
 /* navigation bar */
+.navbar, .phone_navbar_top, .phone_navbar_btm {
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 10px 0;
+    background: black;
+}
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 9999;
-    background: black;
 }
-.navbar a {
-    float: left;
+.navbar a, .phone_navbar_top a, .phone_navbar_btm a {
     display: block;
-    padding: 10px 20px;
+    float: left;
+    padding: 5px 20px;
     color: palegoldenrod;
     text-shadow: none;
-}
-.navbar a:hover {
-    background: blue;
-    color: pink;
-    border: none;
     border-radius: 0;
+    border: 3px solid transparent;
+}
+.navbar a:hover, .phone_navbar_top a:hover, .phone_navbar_btm a:hover {
+    color: crimson;
+    border: none;
+    border-radius: 30px;
+}
+.navbar a:active {
+    border: 3px solid white;
+    background-color: tan;
 }
 .navbar a.right {
     float: right;
+}
+.phone_navbar_top, .phone_navbar_btm {
+    display: none;
 }
 
 .role-option {
@@ -186,9 +198,28 @@ a:hover {
 
 /* on phone */
 @media screen and (max-width: 62rem) {
+    .page_content {
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
     .side, .main, .navbar, .footer{   
       width: 100%;
       padding: 0;
+    }
+    .navbar {
+        display: none;
+    }
+    .phone_navbar_top {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .phone_navbar_btm {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
     .card, .card_white_main, .card_white {
         padding: 12px;
