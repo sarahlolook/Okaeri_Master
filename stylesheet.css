@@ -50,6 +50,13 @@ div {
     margin: 0;
     font-size: clamp(2rem, 3vw, 5rem);
 }
+.header_text_cen{
+    text-align: center;
+    text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+    color: palevioletred;
+    margin: 0;
+    font-size: clamp(2rem, 3vw, 5rem);
+}
 
 /* images */
 img {
@@ -58,6 +65,10 @@ img {
     width: 100%;
     height: auto;
     margin: 0 auto;
+}
+img.img_max {
+    max-width: 350px;
+    min-width: 200px;
 }
 .side img, .main img {
     object-fit:cover;
@@ -69,7 +80,7 @@ img {
     border: 5px solid palevioletred;
     border-radius: 40px;
     padding: 20px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .card {
     background: rgb(255, 215, 222);
@@ -91,7 +102,7 @@ img {
     background: rgb(255, 215, 222);
 }
 img.pfp_img {
-    max-width: 250px;
+    max-width: 350px;
 }
 
 /* button */
@@ -198,6 +209,12 @@ a:hover {
         width: 100px;
         padding: 0;
         margin: 0;
+        height: auto;
+    }
+    img.img_max {
+        width: 250px;
+        padding: 0;
+        margin: auto;
         height: auto;
     }
   }
