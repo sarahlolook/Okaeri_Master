@@ -135,7 +135,7 @@ a:hover {
 
 .no_link_style:hover, .no_link_style:active {
     color:brown;
-    background-color: transparent;
+    background-color: transpar  ent;
     border: none;
 }
 

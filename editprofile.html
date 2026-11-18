@@ -8,7 +8,19 @@
     </head>
     <body>
         <div class="navbar">
-            <a class="header_text" href="index.html">Okaeri Master</a>
+            <a class="header_text no_link_style" href="index.html">Okaeri Master</a>
+            <a href="myprofile.html">Profile</a>
+            <a href="feed.html">Feed</a>
+            <a href="project.html">Chat</a>
+            <a class="right" href="#Works">Works</a>
+            <a class="right" href="#Contact">Contact</a>
+        </div>
+        
+        <!-- Phone navbar -->
+        <div class="phone_navbar_top">
+            <a class="header_text no_link_style" href="index.html">Okaeri Master</a>
+        </div>
+        <div class="phone_navbar_btm">
             <a href="myprofile.html">Profile</a>
             <a href="feed.html">Feed</a>
             <a href="project.html">Chat</a>
@@ -19,25 +31,57 @@
         <div class="page_content">
             <div class="side">
                 <div class="card">
-                    <h1 class="header_text_cen">Profile</h1>
-                    <img src="images/manager1.png" class="img_max"
-                        alt="preview">
-                    <h2>Username</h2>
-                    Role 
-						<label>
-							<input type="radio" name="role" value="master">Master
-						</label> <br>
-                    Fav Cup
-						<label>
-							<input type="radio" name="role" value="master">Master
-						</label> <br>
-                    <hr>
-                    Interest
-                        <label>
-                            <input type="radio" name="role" value="master">Master
-                        </label> <br>
-                    <button type="button"><a href="">Edit Profile</a></button> <br>
-                    <button type="button"><a href="">My Feed</a></button>
+                    <h1 class="header_text_cen">Edit Profile</h1>
+                    <form>
+                        <fieldset>
+                            <legend>Edit Profile</legend>
+                            <img src="images/manager1.png" class="img_max"
+                                alt="preview">
+                            <!-- Username -->
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                            <br>
+                
+                            <!-- Role -->
+                            Role
+                            <div class="role-selection">
+                                <label class="role-option">
+                                    <input type="radio" name="role" value="master">
+                                    Master
+                                </label>
+                
+                                <label class="role-option">
+                                    <input type="radio" name="role" value="maid">
+                                    Maid
+                                </label>
+                            </div>
+                
+                            <!-- Favourite Cups -->
+                            <fieldset>
+                                <legend>Favourite Cups (Maximum 3)</legend>
+                
+                                <label>
+                                    <input type="checkbox" name="fav_cup" value="cup1">
+                                    Cup 1
+                                </label>
+                
+                                <label>
+                                    <input type="checkbox" name="fav_cup" value="cup2">
+                                    Cup 2
+                                </label>
+                
+                                <label>
+                                    <input type="checkbox" name="fav_cup" value="cup3">
+                                    Cup 3
+                                </label>
+                            </fieldset>
+                
+                            <br>
+                            <button type="submit">Confirm</button>
+                            <button type="reset">Reset</button>
+                
+                        </fieldset>
+                    </form>
                 </div>
             </div>
             <div class="main">
