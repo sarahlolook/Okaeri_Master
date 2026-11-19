@@ -5,6 +5,7 @@
         <title>LIVE CHAT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheet.css">
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <div class="navbar">
@@ -12,8 +13,8 @@
             <a href="../profile/myprofile.html">Profile</a>
             <a href="../feed/feed.html">Feed</a>
             <a href="../livechat/livechat.html">Chat</a>
-            <a class="right" href="#Works">Works</a>
-            <a class="right" href="#Contact">Contact</a>
+            <a class="right" href="#Contact">LOG-OUT</a>
+            <a class="right" href="#Works">Switch</a>
         </div>
         
         <!-- Phone navbar -->
@@ -25,8 +26,7 @@
             <a href="../profile/myprofile.html">Profile</a>
             <a href="../feed/feed.html">Feed</a>
             <a href="../livechat/livechat.html">Chat</a>
-            <a class="right" href="#Contact">LOG-OUT</a>
-        </div>        
+        </div>  
 
         <div class="page_content">
             <div class="card">
@@ -43,17 +43,18 @@
                     <span>Your ID: <span id="your_id">-</span></span>
                 </div>
                 <h1 class="header_text_cen">LIVE CHAT</h1>
-                <div class="side">
-                    <div class="pfp_card">
-                        <button><img src="../images/manager1.png" class="pfp_img"
-                            alt="preview">server tea</button>
-                        <div class="pfp_info">
-                            <button><img src="../images/manager1.png" class="pfp_img"
-                                alt="preview">game</button>
-                        </div>
+                <div class="live_side">
+                    <div class="gametab_card">
+                        <button class="no_link_style gametab_btn">
+                            <img src="../images/manager1.png" class="gametab_img"
+                            alt="preview">serve</button>
+                        <button class="no_link_style gametab_btn">
+                            <img src="../images/manager1.png" class="gametab_img"
+                            alt="preview">game</button>
+
                     </div>
                 </div>
-                <div class="main">
+                <div class="live_main">
                     <div class="card_white_main" id="chatbox">
                         <div id="loginform">
                             <div id="menu">
@@ -61,8 +62,8 @@
                             </div>
                         </div>            
                     </div>
-                    <div id="wrapper">      
-                        <input name="userMsg" type="text" id="userMsg" size="63" />
+                    <div class="wrapper">      
+                        <input name="userMsg" type="text" id="userMsg" placeholder="Type here.."/>
                         <button id="submitmsg" disabled>Send</button>
                     </div>
                 </div>

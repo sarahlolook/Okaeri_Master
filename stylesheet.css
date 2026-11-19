@@ -29,6 +29,15 @@ div {
     float: left;
     width: 70%;
 }
+.live_side {
+    float: right;
+    width: 10%;
+}
+.live_main {
+    float: left;
+    width: 90%;
+}
+
 
 .home_header, fieldset {
     overflow: hidden;
@@ -101,6 +110,32 @@ img.img_max {
     background-color: aliceblue;
 }
 
+/* wrapper */
+.wrapper {
+    display: flex;
+    width: 100%;
+    margin:20px 0 20px 0;
+}
+/* input */
+input {
+    display: block;
+    padding:10px;
+    margin-right: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    border:3px solid lavender;
+    font-family: Candara;
+    font-size: clamp(1rem, 2vw, 2rem);
+    align-items: center;
+    text-align: left;
+    background: white;
+    border-radius: 30px;
+}
+input::placeholder {
+    color: rgb(255, 151, 168);
+}
+
 /* profile card */
 .pfp_card {
     display: flex;
@@ -109,6 +144,7 @@ img.img_max {
     text-align: center;
     background: rgb(255, 215, 222);
 }
+
 img.pfp_img {
     max-width: 350px;
 }
@@ -139,6 +175,28 @@ img.viewpfp_img {
     object-fit: cover;
     padding: 0;
 }
+.gametab_card {
+    margin: 0 auto;
+    width: 100%;
+}
+.gametab_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+img.gametab_img {
+    display: flex;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    padding: 0;
+}
 
 /* button */
 button {
@@ -149,7 +207,7 @@ button {
     color: blue;
     background-color: lightgoldenrodyellow;
     border: 3px solid orange;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 button:active {
     background-color: rgb(255, 151, 168);
@@ -192,6 +250,19 @@ a.no_link_style {
     background-color: transparent !important;
     border: 3px solid transparent !important;
 }
+button.no_link_style {
+    color: black;
+    text-decoration: none;
+    background: transparent;
+    border: 3px solid transparent !important;
+    text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+}
+
+button.no_link_style:hover, button.no_link_style:active {
+    color: brown;
+    background-color: transparent;
+    border: 3px solid transparent !important;
+}
 
 /* navigation bar */
 .navbar, .phone_navbar_top, .phone_navbar_btm {
@@ -199,13 +270,14 @@ a.no_link_style {
     width: 100%;
     z-index: 9999;
     padding: 15px 0;
-    font-size: clamp(1.2rem, 2.5vw, 3rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     background: black;
 }
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
+    margin: 0 auto;
 }
 .navbar a, .phone_navbar_top a, .phone_navbar_btm a {
     display: block;
@@ -271,11 +343,11 @@ a.no_link_style {
         padding-top: 80px;
         padding-bottom: 70px;
     }
-    .side, .main, .navbar, .footer{   
+    .side, .main, .navbar, .footer, .live_main{   
       width: 100%;
       padding: 0;
     }
-    .navbar {
+    .live_side, .navbar {
         display: none;
     }
     .phone_navbar_top {
