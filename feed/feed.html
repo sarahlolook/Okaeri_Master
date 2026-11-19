@@ -2,92 +2,80 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>My Profile</title>
+        <title>Feed</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="../stylesheet.css">
     </head>
     <body>
         <div class="navbar">
-            <a class="header_text no_link_style" href="index.html">Okaeri Master</a>
-            <a href="myprofile.html">Profile</a>
-            <a href="feed.html">Feed</a>
-            <a href="livechat/livechat.html">Chat</a>
+            <a class="header_text no_link_style" href="../index.html">Okaeri Master</a>
+            <a href="../profile/myprofile.html">Profile</a>
+            <a href="../feed/feed.html">Feed</a>
+            <a href="../livechat/livechat.html">Chat</a>
             <a class="right" href="#Works">Works</a>
             <a class="right" href="#Contact">Contact</a>
         </div>
         
         <!-- Phone navbar -->
         <div class="phone_navbar_top">
-            <a class="header_text no_link_style" href="index.html">Okaeri Master</a>
+            <a class="header_text no_link_style" href="../index.html">Okaeri Master</a>
             <a class="right" href="#Works">Switch</a>
         </div>
         <div class="phone_navbar_btm">
-            <a href="myprofile.html">Profile</a>
-            <a href="feed.html">Feed</a>
-            <a href="livechat/livechat.html">Chat</a>
+            <a href="../profile/myprofile.html">Profile</a>
+            <a href="../feed/feed.html">Feed</a>
+            <a href="../livechat/livechat.html">Chat</a>
             <a class="right" href="#Contact">LOG-OUT</a>
         </div>
-    
+
         <div class="page_content">
             <div class="side">
-                <div class="card">
-                    <h1 class="header_text_cen">Profile</h1>
-                    <img src="images/manager1.png" class="img_max"
+                <div class="pfp_card">
+                    <img src="../images/manager1.png" class="pfp_img"
                         alt="preview">
-                    <h2>Username</h2>
-                    Role 
-						<label>
-							<input type="radio" name="role" value="master">Master
-						</label> <br>
-                    Fav Cup
-						<label>
-							<input type="radio" name="role" value="master">Master
-						</label> <br>
-                    <hr>
-                    Interest
-                        <label>
-                            <input type="radio" name="role" value="master">Master
-                        </label> <br>
-                    <a href="editprofile.html">Edit Profile</a> <br>
-                    <a href="#myfeed">My Feed</a>
+                    <div class="pfp_info">
+                        <h3>Username</h3>
+                        <a href="../profile/myprofile.html">My Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2>LIVE CHAT</h2>
+                    Once you’ve gently poured the mixture between two tins, spin the cake pans to ensure the air 
+                    <br>
+                    <a href="livechat/livechat.html">ต้อนรับกลับบ้าน</a>
                 </div>
             </div>
-            <div class="main" id="myfeed">
+            <div class="main">
                 <div class="card">
-                    <br>
-                    <h1 class="header_text_cen">My FEED</h1>
+                    <a href="../profile/myprofile.html#myfeed">My Feed</a>
+                    <h1 class="header_text_cen">FEED</h1>
                     <div class="feed_container">
                         <div class="card_white">
-                            <button type="button"><a href="">Edit</a></button>
-                            <button type="button"><a href="">Delete</a></button> <br>
                             <span id="username">Internet user Username</span> <br>
                             <h2 id="topic"><strong>How to bake a perfect Sponge Cake!</strong></h2>
                             <p id="content">Once you’ve gently poured the mixture between two tins, spin the cake pans to ensure the air bubbles are evenly distributed.
                                 Then, to check when the cakes are ready, lightly touch them and see if they spring back (don’t insert a skewer as that may cause deflation).   
                             </p>
-                            <img src="images/manager1.png" id="img"
+                            <img src="../images/manager1.png" id="img"
                                 alt="preview">
                             <!-- likes, comment, view comments -->
                         </div>
                         <div class="card_white">
-                            <button type="button"><a href="">Edit</a></button>
-                            <button type="button"><a href="">Delete</a></button> <br>
                             <span id="username">Internet user Username</span> <br>
                             <h2 id="topic"><strong>How to bake a perfect Sponge Cake!</strong></h2>
                             <p id="content">Once you’ve gently poured the mixture between two tins, spin the cake pans to ensure the air bubbles are evenly distributed.
                                 Then, to check when the cakes are ready, lightly touch them and see if they spring back (don’t insert a skewer as that may cause deflation).   
                             </p>
-                            <img src="images/manager1.png" id="img"
+                            <img src="../images/manager1.png" id="img"
                                 alt="preview">
                             <!-- likes, comment, view comments -->
                         </div>
                         <div class="card_white">
-                            <button type="button"><a href="">Edit</a></button>
-                            <button type="button"><a href="">Delete</a></button> <br>
                             <span id="username"></span> <br>
                             <h2 id="topic"><strong></strong></h2>
                             <p id="content"></p>
-                            <img src="images/manager1.png" id="img"
+                            <img src="../images/manager1.png" id="img"
                                 alt="preview">
                         </div>
                     </div>

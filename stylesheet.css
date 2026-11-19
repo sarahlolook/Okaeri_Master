@@ -113,6 +113,33 @@ img.pfp_img {
     max-width: 350px;
 }
 
+.viewpfp_card {
+    width: 100%;
+    max-width: 350px;
+}
+.viewpfp_btn{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+.viewpfp_info {
+    flex: 1;
+    min-width: 0;
+}
+/* reduce gap and try to make text bigger */
+img.viewpfp_img {
+    flex: 0 0 40px;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    padding: 0;
+}
+
 /* button */
 button {
     cursor: pointer;
@@ -288,6 +315,16 @@ a.no_link_style {
         margin: 0;
         height: auto;
     }
+    
+    .viewpfp_card {
+        width: 100%;
+        max-width: 200px;
+    }
+    img.viewpfp_img {
+        width: 100%;
+        max-width: 50px;
+    }
+
     img.img_max {
         width: 250px;
         padding: 0;
