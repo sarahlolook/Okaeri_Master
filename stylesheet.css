@@ -42,7 +42,7 @@ div {
 .home_header, fieldset {
     overflow: hidden;
     padding: 20px;
-    margin: 5%;
+    margin: 0 5% 0 5%;
     min-height: 100px;
     background: rgb(255, 215, 222);
     border: 5px solid palevioletred;
@@ -120,7 +120,7 @@ img.img_max {
 input {
     display: block;
     padding:10px;
-    margin-right: 10px;
+    margin: 0 5px 0 2px;
     width: 100%;
     outline: none;
     font-size: 1rem;
@@ -147,55 +147,6 @@ input::placeholder {
 
 img.pfp_img {
     max-width: 350px;
-}
-
-.viewpfp_card {
-    width: 100%;
-    max-width: 350px;
-}
-.viewpfp_btn{
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 10px;
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
-}
-.viewpfp_info {
-    flex: 1;
-    min-width: 0;
-}
-/* reduce gap and try to make text bigger */
-img.viewpfp_img {
-    flex: 0 0 40px;
-    width: 100%;
-    max-width: 80px;
-    border-radius: 50px;
-    object-fit: cover;
-    padding: 0;
-}
-.gametab_card {
-    margin: 0 auto;
-    width: 100%;
-}
-.gametab_btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    gap: 10px;
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
-}
-img.gametab_img {
-    display: flex;
-    width: 100%;
-    max-width: 80px;
-    border-radius: 50px;
-    object-fit: cover;
-    padding: 0;
 }
 
 /* button */
@@ -241,7 +192,7 @@ a.no_link_style {
     color: black;
     text-decoration: none;
     background: transparent;
-    border: none;
+    border: 3px solid transparent !important;
     text-shadow: 2px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
 }
 
@@ -385,22 +336,6 @@ button.no_link_style:hover, button.no_link_style:active {
         width: 100px;
         padding: 0;
         margin: 0;
-        height: auto;
-    }
-    
-    .viewpfp_card {
-        width: 100%;
-        max-width: 200px;
-    }
-    img.viewpfp_img {
-        width: 100%;
-        max-width: 50px;
-    }
-
-    img.img_max {
-        width: 250px;
-        padding: 0;
-        margin: auto;
         height: auto;
     }
   }

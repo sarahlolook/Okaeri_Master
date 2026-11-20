@@ -1,0 +1,38 @@
+// collapse ...https://www.w3schools.com/howto/howto_js_collapsible.asp
+var open_tab = document.getElementsByClassName("open_tab");
+var i;
+
+for (i = 0; i < open_tab.length; i++) {
+  open_tab[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//pop-up card
+const open_popup = document.querySelectorAll(".open_popup");
+const popup = document.querySelector(".popup_bg");
+const popup_content = document.getElementById("popup_content");
+const popup_close = document.querySelector(".popup_close");
+
+//selected content popup
+open_popup.forEach(function(button) {
+    button.addEventListener("click", function() {
+
+        const content_id = this.dataset.popup;
+        const content = document.getElementById(content_id);
+
+        popup_content.innerHTML = content.innerHTML;
+        popup.style.display = "block";
+    });
+});
+
+//close popup
+popup_close.addEventListener("click", function() {
+    popup.style.display = "none";
+});

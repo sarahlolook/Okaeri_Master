@@ -5,6 +5,7 @@
         <title>LIVE CHAT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../css/popup.css">
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
@@ -30,14 +31,47 @@
 
         <div class="page_content">
             <div class="card">
-                <div class="viewpfp_card">
+                <div class="open_popup viewpfp_card" data-popup="popup_pfp">
                     <button class="viewpfp_btn">
                         <img src="../images/manager1.png" class="viewpfp_img"
                             alt="preview">
                         <div class="viewpfp_info">
-                        <a href="" class="no_link_style"><b>View Profile</b></a>
-                    </div></button>
+                        <b>View Profile</b>
+                        </div>
+                    </button>
                 </div>
+
+                <!-- popup card -->
+                <div class="popup_bg" id="popup">
+                    <div class="popup_card">
+                        <button class="popup_close">&times;</button>
+                        <div id="popup_content"></div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_pfp">
+                    <h1 class="header_text_cen">Profile</h1>
+                    <img src="../images/manager1.png" class="viewpfp_img_max"
+                        alt="preview">
+                    <h2>Username</h2>              
+                </div>
+
+                <div class="popup_card" id="popup_serve">
+                    <button class="no_link_style gametab_btn">
+                        <img src="../images/manager1.png" class="gametab_img"
+                        alt="preview">serve</button>
+                </div>
+
+                <div class="popup_card" id="popup_game">
+                    <button class="no_link_style gametab_btn">
+                        <img src="../images/manager1.png" class="gametab_img" 
+                        alt="preview">serve</button>               
+                    <button class="no_link_style gametab_btn">
+                        <img src="../images/manager1.png" class="gametab_img" 
+                        alt="preview">game</button>
+                </div>
+                
+                        
                 <div id="statusinfo">
                     <span>Connection: <span id="connection">Connected</span></span> | 
                     <span>Your ID: <span id="your_id">-</span></span>
@@ -51,7 +85,6 @@
                         <button class="no_link_style gametab_btn">
                             <img src="../images/manager1.png" class="gametab_img"
                             alt="preview">game</button>
-
                     </div>
                 </div>
                 <div class="live_main">
@@ -62,12 +95,30 @@
                             </div>
                         </div>            
                     </div>
-                    <div class="wrapper">      
+                    <div class="wrapper"> 
+                        <button class="open_popup mobile_popup" data-popup="popup_game">G</button>
+                        <button class="open_popup mobile_popup" data-popup="popup_serve">S</button>
+
                         <input name="userMsg" type="text" id="userMsg" placeholder="Type here.."/>
                         <button id="submitmsg" disabled>Send</button>
                     </div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="../js/popup.js"></script>
     </body>
 </html>
+
+
+<!-- just something i do for fun, and idea of collapse
+<button type="button" class="open_tab">+</button>
+<div class="content">
+    <div class="gametab_card">
+        <button class="no_link_style gametab_btn">
+            <img src="../images/manager1.png" class="gametab_img"
+                alt="preview">serve</button>
+        <button class="no_link_style gametab_btn">
+            <img src="../images/manager1.png" class="gametab_img"
+                alt="preview">game</button>
+    </div>
+</div>   -->

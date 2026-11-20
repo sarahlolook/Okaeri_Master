@@ -1,0 +1,147 @@
+.open_tab {
+    background-color: #777;
+    color: rgb(218, 165, 165);
+    cursor: pointer;
+    text-align: left;
+    border: 5px solid transparent;
+}
+  
+.active, .open_tab:hover {
+    background-color: #555;
+    border: 5px solid transparent;
+}
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.open_popup {
+    display: block;
+}
+.popup_bg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+}
+.popup_card {
+    background-color: pink;
+    border: 5px solid palevioletred;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 70%;
+    height: auto;
+}
+.popup_card img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+#popup_pfp,
+#popup_game,
+#popup_serve {
+    display: none;
+}
+
+.popup_close {
+    border-radius: 50%;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.popup_close:hover,.popup_close:focus {
+  color: red;
+  background: rgb(255, 119, 119);
+  text-decoration: none;
+  cursor: pointer;
+}
+.mobile_popup {
+    display: none;
+}
+
+/* content css */
+.viewpfp_card {
+    width: 100%;
+    max-width: 350px;
+}
+.viewpfp_btn{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+.viewpfp_info {
+    flex: 1;
+    min-width: 0;
+}
+/* reduce gap and try to make text bigger */
+img.viewpfp_img {
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    padding: 0;
+}
+img.viewpfp_img_max{
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 0;
+}
+.gametab_card {
+    margin: 0 auto;
+    width: 100%;
+}
+.gametab_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+img.gametab_img {
+    display: flex;
+    width: 100%;
+    max-width: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    padding: 0;
+}
+
+@media screen and (max-width: 62rem) {
+    .mobile_popup {
+        display: block;
+        margin: 0 3px;
+    }
+
+    .viewpfp_card {
+        width: 100%;
+        max-width: 200px;
+    }
+    img.viewpfp_img {
+        width: 100%;
+        max-width: 50px;
+    }
+
+    img.img_max {
+        width: 250px;
+        padding: 0;
+        margin: auto;
+        height: auto;
+    }
+}
