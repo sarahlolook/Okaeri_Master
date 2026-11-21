@@ -1,0 +1,20 @@
+.text-clip {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines you want to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-word; /* For older browsers */
+    overflow-wrap: break-word; /* For modern browsers */
+}
+.viewside {
+    float: left;
+    width: 30%;
+}
+@media screen and (max-width: 62rem) {
+    .viewside {
+        display: none;
+        margin: 0 3px;
+    }
+}

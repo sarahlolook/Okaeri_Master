@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Social Feed</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../css/seemore.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="header_text no_link_style" href="../index.html">Okaeri Master</a>
+            <a href="../profile/myprofile.html">Profile</a>
+            <a href="../feed/feed.html">Feed</a>
+            <a href="../livechat/livechat.html">Chat</a>
+            <a class="right" href="#Contact">LOG-OUT</a>
+            <a class="right" href="#Works">Switch</a>
+        </div>
+        
+        <!-- Phone navbar -->
+        <div class="phone_navbar_top">
+            <a class="header_text no_link_style" href="../index.html">Okaeri Master</a>
+            <a class="right" href="#Works">Switch</a>
+        </div>
+        <div class="phone_navbar_btm">
+            <a href="../profile/myprofile.html">Profile</a>
+            <a href="../feed/feed.html">Feed</a>
+            <a href="../livechat/livechat.html">Chat</a>
+        </div>
+
+        <div class="page_content">
+            <div class="viewside">
+                <div class="pfp_card">
+                    <img src="../images/manager1.png" class="pfp_img"
+                        alt="preview">
+                    <div class="pfp_info">
+                        <h3>Username</h3>
+                        <a href="../profile/myprofile.html">My Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2>LIVE CHAT</h2>
+                    Once you’ve gently poured the mixture between two tins, spin the cake pans to ensure the air 
+                    <br>
+                    <a href="../livechat/livechat.html">ต้อนรับกลับบ้าน</a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="card">
+                    <a href="feed.html">Back to Feed</a>
+                    <h1 class="header_text_cen">FEED</h1>
+            
+                    <div class="feed_container">
+                        <div class="card_white">
+                            <span class="username" id="post-username"></span>
+            
+                            <h2 class="topic" id="post-topic"></h2>
+            
+                            <div class="content">
+                                <span id="post-content"></span>
+                            </div>
+            
+                            <img id="post-image" alt="Post image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="viewfeed.js"></script>  
+    </body>
+</html>

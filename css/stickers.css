@@ -1,0 +1,19 @@
+.popup_stickers_style {
+    margin-top: 200px;
+    background-color: lavender;
+    border: 5px solid purple;
+}
+#sticker_list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+img.sticker_img{
+    width: 100px;
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+}

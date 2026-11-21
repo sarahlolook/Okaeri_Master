@@ -33,22 +33,20 @@
     overflow: auto;
 }
 .popup_card {
-    background-color: pink;
-    border: 5px solid palevioletred;
     border-radius: 40px;
     margin: 0 auto;
     padding: 20px;
     width: 70%;
     height: auto;
 }
-.popup_card img{
-    display: block;
-    width: 100%;
-    margin: auto;
+.popup_style {
+    background-color: pink;
+    border: 5px solid palevioletred;
 }
 #popup_pfp,
 #popup_game,
-#popup_serve {
+#popup_serve,
+#popup_stickers{
     display: none;
 }
 

@@ -37,6 +37,14 @@ div {
     float: left;
     width: 90%;
 }
+.feed_side {
+    float: right;
+    width: 20%;
+}
+.feed_main {
+    float: left;
+    width: 80%;
+}
 
 
 .home_header, fieldset {
@@ -100,7 +108,7 @@ img.img_max {
     margin:0 auto;
     padding:10px;
     background-color: aliceblue;
-    height:270px;
+    min-height: 450px;
     width:100%;
     border:5px solid lavender;
     overflow:auto; 
@@ -292,7 +300,7 @@ button.no_link_style:hover, button.no_link_style:active {
 @media screen and (max-width: 62rem) {
     .page_content {
         padding-top: 80px;
-        padding-bottom: 70px;
+        padding-bottom: 80px;
     }
     .side, .main, .navbar, .footer, .live_main{   
       width: 100%;
@@ -300,6 +308,9 @@ button.no_link_style:hover, button.no_link_style:active {
     }
     .live_side, .navbar {
         display: none;
+    }
+    .feed_main, .feed_side {
+        width: 50%;
     }
     .phone_navbar_top {
         display: flex;
@@ -320,6 +331,9 @@ button.no_link_style:hover, button.no_link_style:active {
     .card, .card_white_main, .card_white {
         padding: 12px;
         border-radius: 25px;
+    }
+    .card_white_main{
+        min-height: 270px;
     }
     .pfp_card {
         flex-direction: row;

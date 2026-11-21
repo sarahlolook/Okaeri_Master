@@ -28,6 +28,9 @@ open_popup.forEach(function(button) {
         const content = document.getElementById(content_id);
 
         popup_content.innerHTML = content.innerHTML;
+
+        const popupCard = popup.querySelector(".popup_card");
+        popupCard.className = content.className;
         popup.style.display = "block";
     });
 });
@@ -35,4 +38,19 @@ open_popup.forEach(function(button) {
 //close popup
 popup_close.addEventListener("click", function() {
     popup.style.display = "none";
+});
+
+
+const stickerList = document.getElementById("sticker_list");
+
+stickers.forEach(sticker => {
+    const img = document.createElement("img");
+
+    img.src = sticker.image;
+    img.alt = sticker.name;
+    img.classList.add("sticker_img");
+
+    img.onclick = () => sendSticker(sticker.id);
+
+    stickerList.appendChild(img);
 });

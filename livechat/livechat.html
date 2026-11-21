@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheet.css">
         <link rel="stylesheet" href="../css/popup.css">
+        <link rel="stylesheet" href="../css/stickers.css">
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
@@ -49,26 +50,27 @@
                     </div>
                 </div>
 
-                <div class="popup_card" id="popup_pfp">
+                <div class="popup_card popup_style" id="popup_pfp">
                     <h1 class="header_text_cen">Profile</h1>
                     <img src="../images/manager1.png" class="viewpfp_img_max"
                         alt="preview">
                     <h2>Username</h2>              
                 </div>
-
-                <div class="popup_card" id="popup_serve">
+                <div class="popup_card popup_style" id="popup_serve">
                     <button class="no_link_style gametab_btn">
                         <img src="../images/manager1.png" class="gametab_img"
                         alt="preview">serve</button>
                 </div>
-
-                <div class="popup_card" id="popup_game">
+                <div class="popup_card popup_style" id="popup_game">
                     <button class="no_link_style gametab_btn">
                         <img src="../images/manager1.png" class="gametab_img" 
                         alt="preview">serve</button>               
                     <button class="no_link_style gametab_btn">
                         <img src="../images/manager1.png" class="gametab_img" 
                         alt="preview">game</button>
+                </div>
+                <div class="popup_card popup_stickers_style" id="popup_stickers">
+                    <div id="sticker_list"></div>
                 </div>
                 
                         
@@ -97,15 +99,17 @@
                     </div>
                     <div class="wrapper"> 
                         <button class="open_popup mobile_popup" data-popup="popup_game">G</button>
-                        <button class="open_popup mobile_popup" data-popup="popup_serve">S</button>
+                        <button class="open_popup" data-popup="popup_serve">S</button>
 
                         <input name="userMsg" type="text" id="userMsg" placeholder="Type here.."/>
+                        <button class="open_popup" data-popup="popup_stickers">✮</button>
                         <button id="submitmsg" disabled>Send</button>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="../js/popup.js"></script>
+        <script type="text/javascript" src="../js/stickers.js"></script>  
+        <script type="text/javascript" src="../js/popup.js"></script>  
     </body>
 </html>
 
