@@ -1,19 +1,3 @@
-// collapse ...https://www.w3schools.com/howto/howto_js_collapsible.asp
-var open_tab = document.getElementsByClassName("open_tab");
-var i;
-
-for (i = 0; i < open_tab.length; i++) {
-  open_tab[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
 //pop-up card
 const open_popup = document.querySelectorAll(".open_popup");
 const popup = document.querySelector(".popup_bg");

@@ -5,6 +5,7 @@
         <title>My Profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../css/seemore.css">
     </head>
     <body>
         <div class="navbar">
@@ -28,26 +29,44 @@
         </div>
 
         <div class="page_content">
-            <div class="main" id="myfeed">
-                <div class="card">
+            <div class="viewside">
+                <div class="pfp_card">
+                    <img src="../images/manager1.png" class="pfp_img"
+                        alt="preview">
+                    <div class="pfp_info">
+                        <h3>Username</h3>
+                        <a href="../profile/myprofile.html">My Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h2>LIVE CHAT</h2>
+                    Once you’ve gently poured the mixture between two tins, spin the cake pans to ensure the air 
                     <br>
+                    <a href="../livechat/livechat.html">ต้อนรับกลับบ้าน</a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="card">
+                    <a href="myprofile.html#myfeed">Back to My Feed</a>
                     <h1 class="header_text_cen">My FEED</h1>
-                    <div class="card_white">
-                        <div class="feed_container">
-                            <button type="button"><a href="">Edit</a></button>
-                            <button type="button"><a href="">Delete</a></button> <br>
-                            <span id="username">Internet user Username</span> <br>
-                            <h2 id="topic"><strong>How to bake a perfect Sponge Cake!</strong></h2>
-                            <p id="content">Once you’ve gently poured the mixture between two tins, spin the cake pans to ensure the air bubbles are evenly distributed.
-                                Then, to check when the cakes are ready, lightly touch them and see if they spring back (don’t insert a skewer as that may cause deflation).   
-                            </p>
-                            <img src="../images/manager1.png" id="img"
-                                alt="preview">
-                            <!-- likes, comment, view comments -->
+            
+                    <div class="feed_container">
+                        <div class="card_white">
+                            <span id="post-username"></span><br>
+                            <textarea id="edit-topic"></textarea><br>
+                            <textarea id="edit-content"></textarea>
+                    
+                            <img id="post-image" alt="Post image">
+                    
+                            <button type="button" id="save-btn">Save</button>
+                            <button type="button" id="reset-btn">Reset</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="editfeed.js"></script>  
+        <script type="text/javascript" src="../js/seemore.js"></script>  
     </body>
 </html>

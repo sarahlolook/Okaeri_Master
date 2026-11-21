@@ -1,11 +1,3 @@
-.open_tab {
-    background-color: #777;
-    color: rgb(218, 165, 165);
-    cursor: pointer;
-    text-align: left;
-    border: 5px solid transparent;
-}
-  
 .active, .open_tab:hover {
     background-color: #555;
     border: 5px solid transparent;

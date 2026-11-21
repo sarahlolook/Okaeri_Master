@@ -9,3 +9,20 @@ if (text.scrollHeight > text.clientHeight) {
 } else {
     expandLink.style.display = "none";
 }
+
+// collapse ...https://www.w3schools.com/howto/howto_js_collapsible.asp
+const seeMoreButtons = document.querySelectorAll(".expand_text");
+
+seeMoreButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        const text = this.previousElementSibling;
+
+        text.classList.toggle("expanded");
+
+        if (text.classList.contains("expanded")) {
+            this.textContent = "See Less";
+        } else {
+            this.textContent = ">>See More";
+        }
+    });
+});
