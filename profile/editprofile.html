@@ -29,59 +29,52 @@
 
         <div class="page_content">
             <div class="side">
-                <div class="card">
-                    <h1 class="header_text_cen">Edit Profile</h1>
-                    <form>
-                        <fieldset>
-                            <legend>Edit Profile</legend>
-                            <img src="../images/manager1.png" class="img_max"
-                                alt="preview">
-                            <!-- Username -->
-                            <label for="username">Username</label>
+                <form>
+                    <fieldset>
+                        <h1 class="header_text_cen">Edit Profile</h1>
+                        <img src="../images/manager1.png" class="img_max" 
+                            id="role-preview" alt="Role preview">
+                        <!-- Username -->
+                        <div>
+                            Username
                             <input type="text" id="username" name="username" required>
-                            <br>
-                
-                            <!-- Role -->
+                        </div><br>
+            
+                        <div class="role-selection">
                             Role
-                            <div class="role-selection">
-                                <label class="role-option">
-                                    <input type="radio" name="role" value="master">
-                                    Master
-                                </label>
-                
-                                <label class="role-option">
-                                    <input type="radio" name="role" value="maid">
-                                    Maid
-                                </label>
-                            </div>
-                
-                            <!-- Favourite Cups -->
-                            <fieldset>
-                                <legend>Favourite Cups (Maximum 3)</legend>
-                
-                                <label>
-                                    <input type="checkbox" name="fav_cup" value="cup1">
-                                    Cup 1
-                                </label>
-                
-                                <label>
-                                    <input type="checkbox" name="fav_cup" value="cup2">
-                                    Cup 2
-                                </label>
-                
-                                <label>
-                                    <input type="checkbox" name="fav_cup" value="cup3">
-                                    Cup 3
-                                </label>
-                            </fieldset>
-                
-                            <br>
-                            <button type="submit">Confirm</button>
-                            <button type="reset">Reset</button>
-                
-                        </fieldset>
-                    </form>
-                </div>
+                            <label class="role-option">
+                                <input type="radio" name="role" value="master">Master
+                            </label>
+                        
+                            <label class="role-option">
+                                <input type="radio" name="role" value="maid">Maid
+                            </label>
+                        </div>
+                        <div class="cup-selection">
+                            Fav Cup
+                            <label>
+                                <input type="radio" name="cup" value="cup1">Cup1
+                            </label> <br>
+                        </div> <hr>
+                        Interest
+                        <div class="interest-selection">
+                            <label class="interest-option">
+                                <input type="radio" name="interest" value="one">Interest
+                            </label>
+                            <label class="interest-option">
+                                <input type="radio" name="interest" value="one">Interest2
+                            </label>
+                            <label class="interest-option">
+                                <input type="radio" name="interest" value="one">Interest3
+                            </label>
+                        </div> <br>
+            
+                        <br>
+                        <button type="submit">Confirm</button>
+                        <button type="reset">Reset</button>
+            
+                    </fieldset>
+                </form>
             </div>
             <div class="main">
                 <div class="card_white">
@@ -94,6 +87,6 @@
                 </div>
             </div>
         </div>
-            
+        <script type="text/javascript" src="editprofile.js"></script>       
     </body>
 </html>

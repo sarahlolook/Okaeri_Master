@@ -4,14 +4,14 @@ const posts = [
         username: "Username",
         topic: "How to bake a perfect Sponge Cake!",
         content: "Once you've gently poured the mixture between two tins, spin the cake pans to ensure the air bubbles are evenly distributed. Then, to check when the cakes are ready, lightly touch them and see if they spring back (don't insert a skewer as that may cause deflation).",
-        image: "../images/mermaid-diagram.png"
+        image: "../images/manager1.png"
     },
     {
         id: 2,
         username: "Username",
         topic: "Chat GPT nice diagram!",
         content: "a short definition of what each button do",
-        image: "../images/manager1.png"
+        image: "../images/mermaid-diagram.png"
     }
 ];
 

@@ -28,7 +28,7 @@
     border-radius: 40px;
     margin: 0 auto;
     padding: 20px;
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 .popup_style {
@@ -73,7 +73,7 @@
 }
 .viewpfp_info {
     flex: 1;
-    min-width: 0;
+    margin-left: 10px;
 }
 /* reduce gap and try to make text bigger */
 img.viewpfp_img {
@@ -85,7 +85,8 @@ img.viewpfp_img {
 }
 img.viewpfp_img_max{
     width: 100%;
-    max-width: 150px;
+    height: auto;
+    max-width: 250px;
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
@@ -114,6 +115,9 @@ img.gametab_img {
 }
 
 @media screen and (max-width: 62rem) {
+    .popup_card {
+        width: 80%;
+    }
     .mobile_popup {
         display: block;
         margin: 0 3px;
