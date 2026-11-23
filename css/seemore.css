@@ -1,6 +1,7 @@
 .expand_text {
     display: block;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .text-clip {
