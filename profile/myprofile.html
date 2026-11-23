@@ -35,19 +35,35 @@
                     <img src="../images/manager1.png" class="img_max"
                         alt="preview">
                     <h2>Username</h2>
-                    Role 
-						<label>
+                    <div class="role-selection">
+                        Role
+						<label class="role-option">
 							<input type="radio" name="role" value="master">Master
-						</label> <br>
-                    Fav Cup
-						<label>
-							<input type="radio" name="role" value="master">Master
-						</label> <br>
-                    <hr>
-                    Interest
+						</label>
+					
+						<label class="role-option">
+							<input type="radio" name="role" value="maid">Maid
+						</label>
+					</div>
+                    <div class="cup-selection">
+                        Fav Cup
                         <label>
-                            <input type="radio" name="role" value="master">Master
-                        </label> <br>
+							<input type="radio" name="cup" value="cup1">Cup1
+						</label> <br>
+                    </div> <hr>
+                    Interest
+                    <div class="interest-selection">
+                        <label class="interest-option">
+                            <input type="radio" name="interest" value="one">Interest
+                        </label>
+                        <label class="interest-option">
+                            <input type="radio" name="interest" value="one">Interest2
+                        </label>
+                        <label class="interest-option">
+                            <input type="radio" name="interest" value="one">Interest3
+                        </label>
+                    </div> <br>
+
                     <a href="editprofile.html">Edit Profile</a> <br>
                     <a href="#myfeed">My Feed</a>
                 </div>
@@ -56,6 +72,7 @@
                 <div class="card">
                     <br>
                     <h1 class="header_text_cen">My FEED</h1>
+                    <button>Create New Post</button>
             
                     <div class="feed_container" id="feed-container">
                         

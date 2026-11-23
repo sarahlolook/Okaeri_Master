@@ -24,10 +24,12 @@ div {
 .side {
     float: left;
     width: 30%;
+    padding-left: 10px;
 }
 .main {
     float: left;
     width: 70%;
+    padding-left: 10px;
 }
 .live_side {
     float: right;
@@ -40,10 +42,12 @@ div {
 .feed_side {
     float: right;
     width: 20%;
+    gap: 20px;
 }
 .feed_main {
     float: left;
     width: 80%;
+    gap: 20px;
 }
 
 
@@ -98,7 +102,7 @@ img.img_max {
     border: 5px solid palevioletred;
     border-radius: 40px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0 20px 0;
 }
 .card {
     background: rgb(255, 215, 222);
@@ -142,6 +146,38 @@ input {
 }
 input::placeholder {
     color: rgb(255, 151, 168);
+}
+/* label */
+label {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 2px;
+    background-color: lavenderblush;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* Hide radio circle */
+label input {
+    display: none;
+}
+.role-option {
+    background-color: lavenderblush;
+}
+.role-option:has(input:checked) {
+    background-color: rgb(255, 151, 168);
+    border: 3px solid palevioletred;
+    color: white;
+}
+.interest-selection {
+    font-size: small;
+}
+.interest-option {
+    background-color: palevioletred;
+}
+.interest-option:has(input:checked) {
+    background-color: violet;
+    color: white;
 }
 
 /* profile card */
@@ -265,23 +301,7 @@ button.no_link_style:hover, button.no_link_style:active {
     display: none;
 }
 
-.role-option {
-    display: inline-block;
-    padding: 3px 10px;
-    background-color: lavenderblush;
-    border: 3px solid transparent;
-    border-radius: 30px;
-    cursor: pointer;
-}
-/* Hide radio circle */
-.role-option input {
-    display: none;
-}
-.role-option:has(input:checked) {
-    background-color: rgb(255, 151, 168);
-    border: 3px solid palevioletred;
-    color: white;
-}
+
 /* feed */
 .feed_container {
     width: 100%;
